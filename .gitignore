@@ -16,3 +16,6 @@
 
 # Ignore .project file created by eclipse
 .project
+
+# Ignore .idea files created by RubyMine
+/.idea
