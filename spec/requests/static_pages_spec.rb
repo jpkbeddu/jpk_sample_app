@@ -13,9 +13,9 @@ describe "Static pages ->" do
 		it	{should have_title(full_title(''))}
 #		end
 #		it "should not have the custom page title '| Home'" do
-#     visit root_path
-    it {should_not have_title("| Home")}
-#   end
+#     	visit root_path
+    	it {should_not have_title("| Home")}
+#   	end
 	end
 	describe "Help page ->" do
 		before { visit help_path }

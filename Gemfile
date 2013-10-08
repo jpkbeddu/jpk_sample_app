@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
 gem 'bootstrap-sass'
+gem 'bcrypt-ruby', '3.0.1', :require => "bcrypt"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -11,6 +12,9 @@ group :development, :test do
 	gem 'guard-rspec'
 end
 
+group :development do
+	gem 'annotate'
+end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -37,7 +41,7 @@ group :production do
 end
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+#gem 'bcrypt-ruby', '~> 3.0.0', :require => "bcrypt"
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
